@@ -3710,14 +3710,14 @@ MonoBehaviour:
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
-    m_Time: 20
+    m_Time: 10
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
+  m_CustomBlends: {fileID: 11400000, guid: 6c0b38f40e3eaa3469f84b8e8e336e68, type: 2}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -9000,7 +9000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00015025726, y: 0}
+  m_AnchoredPosition: {x: 0.000017179405, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1887227722443775102
@@ -9458,8 +9458,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7986374551541707683}
-  - component: {fileID: 7986374551541707684}
-  - component: {fileID: 7986374551541707685}
   m_Layer: 0
   m_Name: CameraList
   m_TagString: Untagged
@@ -9502,83 +9500,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &7986374551541707684
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6921775411024100353}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3d626a951674aa0419c611043e43b4fc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7986374551541707685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6921775411024100353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 325a6a3050a061e4b8aa51386c30e8e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExcludedPropertiesInInspector:
-  - m_Script
-  m_LockStageInInspector: 
-  m_StreamingVersion: 20170927
-  m_Priority: 10
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
-  m_AnimatedTarget: {fileID: 7986374551541707684}
-  m_LayerIndex: 0
-  m_ShowDebugText: 1
-  m_ChildCameras:
-  - {fileID: 8288832560274116659}
-  - {fileID: 272310934}
-  - {fileID: 768688636}
-  m_Instructions:
-  - m_FullHash: 2075602292
-    m_VirtualCamera: {fileID: 8288832560274116659}
-    m_ActivateAfter: 0
-    m_MinDuration: 0
-  - m_FullHash: 830880406
-    m_VirtualCamera: {fileID: 272310934}
-    m_ActivateAfter: 0
-    m_MinDuration: 0
-  - m_FullHash: 1394130234
-    m_VirtualCamera: {fileID: 768688636}
-    m_ActivateAfter: 0
-    m_MinDuration: 0
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 0.5
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 11400000, guid: 6c0b38f40e3eaa3469f84b8e8e336e68, type: 2}
-  m_ParentHash:
-  - m_Hash: 2075602292
-    m_ParentHash: 756556552
-  - m_Hash: 1394130234
-    m_ParentHash: 756556552
-  - m_Hash: 830880406
-    m_ParentHash: 756556552
 --- !u!114 &8288832560274116659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9629,7 +9550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15058b0b06d0e544babe4cccc534396f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _useCinemachineStateDrivenCamera: 1
+  _useCinemachineStateDrivenCamera: 0
+  _cameraBrain: {fileID: 762590624}
   _parentBtn: {fileID: 1887227722443775100}
   _btnPref: {fileID: 4049016757824336539, guid: 678c4ab8dc2f07240a27b6cfaaae949a, type: 3}
   _camlist: {fileID: 6921775411024100353}
